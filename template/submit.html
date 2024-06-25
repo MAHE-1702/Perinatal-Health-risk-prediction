@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perinatal Health Risk Prediction - Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Add your custom styles here */
+        /* Example styles for the container and result */
+        .container {
+            background-color: #1f251f;
+            color: #ffffff;
+            padding: 50px;
+            margin: 50px;
+            border: 2px solid #000000;
+            animation: fade-in 2s;
+        }
+
+        .result {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: slide-in 2s;
+        }
+
+        /* Example animation keyframes */
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slide-in {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Perinatal Health Risk Prediction</h1>
+        <div class="result">
+            <p>{{ prediction_text }}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perinatal Health Risk Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Add your custom styles here */
+        /* Example styles for the container and button */
+        .container {
+            background-color: #1e2e05;
+            color: #ffffff;
+            padding: 50px;
+            margin: 50px;
+            border: 2px solid #000000;
+            animation: fade-in 5s;
+        }
+
+        .button {
+            background-color: #090c09;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            animation: scale-in 2s;
+        }
+
+        /* Example animation keyframes */
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes scale-in {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Perinatal Health Risk Prediction</h1>
+        <p>Perinatal health risk prediction is a machine learning model that predicts the risk level for pregnant women based on various health factors.</p>
+        <p>Our model takes into account factors such as age, blood pressure, blood sugar, body temperature, and heart rate to determine the risk level.</p>
+        <p>By providing accurate risk assessment, healthcare providers can make informed decisions and provide appropriate care to pregnant women.</p>
+        <p>Click the button below to get started with the prediction.</p>
+        <a href="{{ url_for('index') }}" class="button">Get Started</a>
+
+        <h2>About the Project</h2>
+        <p>This project aims to develop a predictive model using machine learning techniques to assess the risk of perinatal health complications.</p>
+        <p>The model is trained on a dataset containing medical records of pregnant women and their associated outcomes.</p>
+        <p>It utilizes an ensemble of machine learning algorithms, including decision trees and random forests, to provide accurate risk predictions.</p>
+
+        <h2>Contact Information</h2>
+        <p>If you have any questions or feedback regarding the project, feel free to reach out to us:</p>
+        <p>Email: info@perinatalhealthrisk.com</p>
+        <p>Phone: +1234567890</p>
+    </div>
+</body>
+</html>
